@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fida | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #111;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+    header .logo {
+      font-size: 28px;
+      font-weight: 600;
+      color: #ff5e57;
+    }
+    header nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+    header nav a:hover {
+      color: #ff5e57;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 100px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero-content {
+      max-width: 600px;
+    }
+    .hero-content h1 {
+      font-size: 48px;
+      color: #ffcb74;
+      animation: slideIn 1s forwards;
+    }
+    .hero-content h2 {
+      font-size: 36px;
+      margin-top: 10px;
+      color: #fff;
+      animation: slideIn 1.2s forwards;
+    }
+    .hero-content p {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #ddd;
+      animation: slideIn 1.5s forwards;
+    }
+    .hero-content .btn {
+      margin-top: 30px;
+      padding: 10px 25px;
+      background: #ff5e57;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero-content .btn:hover {
+      background: #e6483f;
+    }
+    .profile-img {
+      width: 300px;
+      border-radius: 50%;
+      margin-left: 80px;
+      box-shadow: 0 0 30px rgba(255, 94, 87, 0.5);
+      animation: zoomIn 1.5s ease forwards;
+    }
+    section {
+      padding: 80px 100px;
+    }
+    h3 {
+      font-size: 28px;
+      color: #ffcb74;
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-left: 20px;
+      line-height: 1.8;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideIn {
+      from {transform: translateY(50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes zoomIn {
+      from {transform: scale(0.5); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Fida</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Fida Hussain</h1>
+      <h2>Computer Science Student | SEO Specialist | Graphic Designer | Typist</h2>
+      <p>I am a passionate Computer Science student currently working at Sain Azeem Tech as an SEO specialist and post designer. I have strong command over typing in English, Urdu, and Sindhi. With experience in graphic designing (social media posts, posters, and advertisements), I’m also learning frontend development. I’ve developed a Hospital Management System in C++ and continuously enhance my skills in web technologies.</p>
+      <button class="btn" onclick="window.location.href='mailto:fidajunejo43@gmail.com'">Get In Touch</button>
+    </div>
+    <img class="profile-img" src="fida.png" alt="Fida's Profile">
+  </section>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>SEO (On-Page & Off-Page)</li>
+      <li>Graphic Design (Canva, PosterMyWall)</li>
+      <li>Typing: English, Urdu, Sindhi</li>
+      <li>Programming: C++, Python (Basic), HTML/CSS</li>
+      <li>Social Media Post & Ad Design</li>
+      <li>MS Office Tools</li>
+      <li>Frontend Development (Learning)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <ul>
+      <li>Hospital Management System (C++)</li>
+      <li>Social Media Posts, Posters & Ad Designs</li>
+      <li>Currently working at Sain Azeem Tech on SEO & Design</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Info</h3>
+    <ul>
+      <li>Email: fidajunejo43@gmail.com</li>
+      <li>WhatsApp: +92 319 3867688</li>
+      <li>LinkedIn & Fiverr: Coming Soon</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Fida Portfolio. All rights reserved. | WhatsApp: +92 319 3867688
+  </footer>
+</body>
+</html>
